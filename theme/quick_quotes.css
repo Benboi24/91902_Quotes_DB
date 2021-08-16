@@ -48,7 +48,7 @@ body {
 
 .nav {
     grid-area: nav;
-    background-color: hotpink;  /* silver */
+    background-color: #DDD;  /* silver */
     font-size: 150%;
     padding: 20px;
     vertical-align: middle;
@@ -57,7 +57,7 @@ body {
 
 .main {
     grid-area: main;
-    background-color: rgb(103, 86, 255);  /* very pale grey */
+    background-color: #eee;  /* very pale grey */
     border: solid 1px #CCC;
 }
 
@@ -139,7 +139,7 @@ body {
 
 /* Navigation Links */
 a.topnav {font-weight: bold;}
-a.topnav:link, a.topnav:visited {color: #007c72;} /*dark teal */
+a.topnav:link, a.topnav:visited {color: #007c72;} /* dark teal */
 a.topnav:hover {color: #707a00; text-decoration: none;} 
 
 
