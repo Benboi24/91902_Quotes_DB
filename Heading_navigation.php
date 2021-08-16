@@ -1,6 +1,51 @@
 <!DOCTYPE HTML>
 
+<?php
+
+session_start();
+include("config.php");
+include("functions.php");
+
+// Connect to database...
+$dbconnect=mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD_ DB_NAME);
+
+if(mysqli_connect_errno()) {
+    echo "Connection failed:".mysqli_connect_error();
+    exit;
+}
+
+?>
+
+
 <html lang="en">
+
+<?php include("contnent/head.php"); ?>
+
+<body>
+
+    <div class="wrapper">
+
+            <?php include("content/heading_navigation.php");?>
+
+        <div class="box main">
+
+        <?php>
+
+        if(!isset($_REQUEST['page'])) {
+            include("content/home.php");
+        } // end of if that includes home page
+
+        else {
+            // prevents users from navigation through file system
+            $page=preg_replace('/[^0-9a-zA-Z]-/', '', $_REQUEST['page']);
+            include("content/$page.php");
+
+        } // End of else but that includes requested content
+
+        ?>
+
+        </div> <!-- / main -->
+
 
 <head>
     <meta charset="UTF-8">
@@ -39,7 +84,7 @@
             
             <div class="linkwrapper">
                 <div class="commonsearches">
-                    <a href="#l">All</a> | 
+                    <a href="index.php?page=showall">All</a> | 
                     <a href="#">Recent</a> | 
                     <a href="#">Random</a> 
                 </div>  <!-- / common searches -->
