@@ -48,7 +48,7 @@ body {
 
 .nav {
     grid-area: nav;
-    background-color: #DDD;  /* silver */
+    background-color: hotpink;  /* silver */
     font-size: 150%;
     padding: 20px;
     vertical-align: middle;
@@ -57,7 +57,7 @@ body {
 
 .main {
     grid-area: main;
-    background-color: #eee;  /* very pale grey */
+    background-color: rgb(103, 86, 255);  /* very pale grey */
     border: solid 1px #CCC;
 }
 
@@ -126,8 +126,8 @@ body {
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
-.logo, .banner, .footer {
-    background-color: #d76868;  /* dull red */
+.banner, .footer {
+    background-color: #d76868;  /* Grey / Pink */
 }
 
 /* Set font on dark areas to white */
