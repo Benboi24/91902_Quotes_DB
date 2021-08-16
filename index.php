@@ -11,7 +11,7 @@
     <meta name="author" content="Ben Arthur">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Quicl Quotes</title>
+    <title>Quick Quotes</title>
     
     <!-- Edit the link below / replace with your chosen google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
@@ -39,9 +39,9 @@
             
             <div class="linkwrapper">
                 <div class="commonsearches">
-                    <a href="#l">Item</a> | 
-                    <a href="#">Item</a> | 
-                    <a href="#">Item</a> 
+                    <a href="#l">All</a> | 
+                    <a href="#">Recent</a> | 
+                    <a href="#">Random</a> 
                 </div>  <!-- / common searches -->
             
                 <div class="topsearch">
